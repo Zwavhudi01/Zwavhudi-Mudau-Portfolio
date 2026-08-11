@@ -2,125 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zwavhudi Hope Mudau | Portfolio</title>
-    <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Responsive Portfolio Website design</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #121212;
-    color: #f0f0f0;
-    line-height: 1.6;
-}
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-header {
-    background: #1f1f1f;
-    padding: 40px 0;
-    text-align: center;
-    border-bottom: 1px solid #333;
-}
-
-header h1 {
-    font-size: 2.5em;
-    color: #00ffff;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #ccc;
-}
-
-section {
-    padding: 40px 0;
-    border-bottom: 1px solid #333;
-}
-
-section h2 {
-    color: #00ffff;
-    margin-bottom: 20px;
-}
-
-.skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.skills-list li {
-    background: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-a {
-    color: #00ffff;
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #1f1f1f;
-    color: #888;
-}
-</style>
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <h1>Zwavhudi Hope Mudau</h1>
-            <p>Web and Software Developer</p>
+    <div class="hero-header" id="home">
+        <div class="wrapper">
+            <header>
+                <div class=logo>
+                    <i class="fa-solid fa-z"></i>
+                    <div class="logo-text">Zwavhudi Hope Mudau</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </nav>  
+            </header>
+            <div class="container">
+            <div class="hero-pic">
+                <img src="profile.jpeg" alt="profile pic">
+            </div>
+            <div class="hero-text">
+                <h5>Hi I'm a <span class="input">Full stack Developer</span></h5>
+                <h1>Zwavhudi Hope Mudau</h1>
+                <p>A Highly driven individual with a passion for creating innovative web/software solutions and UI/UX designs,I aspire to build a successful career in the field of software & web development and design.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn active">Download CV</a>
+                    <a href="#" class="btn">Contact</a>
+                </div>
+            </div>
+        
         </div>
-    </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Motivated and reliable individual with a diploma in Information Technology and hands-on experience in several programming languages such as C#, CSS, HTML, JavaScript, and Dart. I am passionate about learning and committed to delivering high-quality service. A fast learner with strengths in communication and teamwork.
-            </p>
-        </div>
-    </section>
+    <!---portfolio section-->
+                <section id="portfolio" class="portfolio">
+    <div class="section-title">
+        <h2>My Portfolio</h2>
+        <p>Some of my recent work</p>
+    </div>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>C#</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>Dart</li>
-            </ul>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <h3>Project One</h3>
+            <p>Short description of your project.</p>
+            <a href="#" class="project-btn">View Project</a>
         </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:zwavhudimudau161@gmail.com">zwavhudimudau161@gmail.com</a></p>
-            <p>Phone: <a href="tel:+27716108628">071 610 8628</a></p>
+        <div class="portfolio-item">
+            <h3>Project Two</h3>
+            <p>Short description of your project.</p>
+            <a href="#" class="project-btn">View Project</a>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Zwavhudi Hope Mudau</p>
+        <div class="portfolio-item">
+            <h3>Project Three</h3>
+            <p>Short description of your project.</p>
+            <a href="#" class="project-btn">View Project</a>
         </div>
-    </footer>
+    </div>
+</section>
+<!---resume section-->
+
+                <section id="resume" class="resume">
+                     <div class="section-title">
+        <h2>My Resume</h2>
+    </div>
+
+    <div class="resume-container">
+        <div class="resume-box">
+            <h3>Education</h3>
+            <p><strong>Diploma in Information Technology</strong></p>
+            <p>Central University of Technology (2018 - 2023)</p>
+        </div>
+
+        <div class="resume-box">
+            <h3>Experience</h3>
+            <p><strong>Software Developer</strong></p>
+            <p>TGLOR (2024 - 2025)</p>
+        </div>
+
+        <div class="resume-box">
+            <h3>Skills</h3>
+            <p>HTML, CSS, JavaScript, React, Node.js, C# ,Python, SQL</p>
+        </div>
+    </div>
+                </section>
+                <!---blog section-->
+                <section id="blog"></section>
+                <!---contact section-->
+                <section id="contact" class="contact">
+                    <div class="section-title">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="contact-container">
+
+                    <form>
+                        <input type="text" placeholder="Zwavhudi Hope Mudau" required>
+                        <input type="email" placeholder="zwavhudimudau161@gmail.com" required>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    </div>
+                </section>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /*creating button click show hide nav bar*/
+        var togglebtn = document.querySelector('.togglebtn');
+        var nav=document.querySelector('.nav-links');
+       /* var links=document.querySelector('.nav-links li');*/
+
+        togglebtn.addEventListener('click',function(){
+            this.classList.toggle('click');
+            nav.classList.toggle('open');
+        });
+        var typed=new Typed(".input",{
+            strings:["Full stack Developer","UI/UX Designer","Software Developer"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+
+    </script>
 
 </body>
 </html>
